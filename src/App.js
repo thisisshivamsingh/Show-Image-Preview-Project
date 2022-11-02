@@ -5,9 +5,10 @@ function App() {
   const [image, setImage] = useState();
   function imageChange(e) {
     if (e.target.files && e.target.files.length > 0) {
+      setImage(e.target.files[0]);
     }
-    setImage(e.target.files[0]);
   }
+
   function removeImage() {
     setImage();
   }
@@ -36,7 +37,7 @@ function App() {
             alt="Thumb"
             style={{
               width: "100px",
-              border: "2px solid black",
+              // border: "2px solid black",
               display: "block",
               marginLeft: "auto",
               marginRight: "auto",
