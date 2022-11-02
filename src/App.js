@@ -37,7 +37,7 @@ function App() {
             alt="Thumb"
             style={{
               width: "100px",
-              // border: "2px solid black",
+              border: "2px solid black",
               display: "block",
               marginLeft: "auto",
               marginRight: "auto",
